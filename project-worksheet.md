@@ -8,8 +8,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Incomplete
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| Pseudocode / actual code | Incomplete
 |Day 5| Initial Clickable Model  | Incomplete
@@ -19,15 +19,15 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+A Web App displaying the works of Aldous Huxley, providing book covers, titles, descriptions, etc.
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+https://res.cloudinary.com/dj10zwlqs/image/upload/v1547570130/Project2/AA_P2_Wireframe.jpg
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+https://res.cloudinary.com/dj10zwlqs/image/upload/v1547570137/Project2/AA_Priority_Matrix.jpg
 
 ### MVP/PostMVP - 5min
 
@@ -45,7 +45,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## React Architectural Design
 
-Define the the React components and the architectural design of your app.
+https://res.cloudinary.com/dj10zwlqs/image/upload/v1547570147/Project2/AA_P2_Component_Hierarchy.jpg
 
 #### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
 
