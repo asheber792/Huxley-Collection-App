@@ -16,9 +16,12 @@
 
 .home-link{
 	flex: 1;
-	color: white;
 }
 
 .works-link{
 	flex: 1;
+}
+
+a:hover{
+	text-shadow: 2px 2px gray;
 }
