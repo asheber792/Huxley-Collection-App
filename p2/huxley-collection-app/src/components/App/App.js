@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Header from '../Header/Header'
 import Quotes from '../Quotes/Quotes'
 

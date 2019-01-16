@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import { Route, Link } from "react-router-dom";
-import Quotes from '../Quotes/Quotes'
+import { Link } from "react-router-dom";
 
 const navStyle = {
   textDecoration: 'none',
