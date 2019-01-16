@@ -9,12 +9,12 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Project Description | Complete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| Pseudocode / actual code | Incomplete
-|Day 5| Initial Clickable Model  | Incomplete
-|Day 6| MVP | Incomplete
-|Day 7| Present | Incomplete
+|Day 1| Wireframes / Priority Matrix / Functional Components | Complete
+|Day 1| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 2| Pseudocode / actual code | Incomplete
+|Day 2| Initial Clickable Model  | Incomplete
+|Day 3| MVP | Incomplete
+|Day 4| Present | Incomplete
 
 
 ## Project Description
@@ -36,12 +36,15 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### SAMPLE.....
 #### MVP 
 
-- Find and use external api 
-- Render data on page in a list
+- Find and use external api's for quotes and list of books
+- render landing page with a quote appearing on screen and changing at random every ? seconds
+- render collected works page displaying titles and book covers 
+- set up onclick function to render a page displaying title, cover, description, etc. 
+- styles 
 
 #### PostMVP 
-
-- Add data to favorites section
+- add freely available ebooks of available books
+- add reviews for books 
 
 ## React Architectural Design
 
@@ -57,7 +60,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Home page | This will render random Aldous Huxley quotes | 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
@@ -84,7 +87,8 @@ Helper functions should be generic enought that they can be reused in other appl
 | Library | What it Does | 
 | --- | :---: |  
 | Bootstrap | Used to help style my application | 
-| Giphy API | Used to get gifs to use | 
+| GoodReads API | Used to get book covers and info | 
+| GoodQuotes API | Used to get Huxley Quotes | 
 
 
 ## Code Snippet
