@@ -3,7 +3,7 @@ import './Works.css';
 import axios from 'axios'
 require('dotenv').config()
 
-const xml2js = require('xml2js')
+const parseString = require('xml2js').parseString
 
 const GOODREADS_TOKEN = process.env.REACT_APP_GOODREADS_ACCESS_TOKEN
 const GR_URL = `https://www.goodreads.com/author/list/3487.Aldous_Huxley?page=1&per_page=50&key=${GOODREADS_TOKEN}`
@@ -20,27 +20,15 @@ class Works extends Component {
   }
 
   async fetchBooks(){
-    const parser = new xml2js.Parser()
-    const self = this
+    // const parser = new xml2js.Parser()
 
 
     let response = await axios(GR_URL)
     console.log(response.data)
 
-    parser.parseString(response.data, (err, result) => {
-      for (const value in result) {
-        const event = result[value];
-        for (const value in event) {
-          const events = event[value][0];
-          console.log(events.books);
-          self.setState({
-            coverURL: 'sdfsf'
-          })
-        }
-      }
+    parseString(response.data, (err, result) => {
+      console.dir(result)
     })
-    console.log(parser)
-    
 
     // this.setState({
     //    title: 'dsdsf',
