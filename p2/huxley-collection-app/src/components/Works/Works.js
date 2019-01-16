@@ -18,11 +18,11 @@ class Works extends Component {
   }
 
   async fetchBooks(){
-    let response = await axios.get(GR_URL)
+    let response = await axios(GR_URL)
     console.log(response.data)
     this.setState({
-       title: '',
-      coverURL: ''//response.data.author.books[0].image_url  
+       title: 'dsdsf',
+       coverURL: "dsjfsdj"
     });
   }
 
@@ -33,7 +33,7 @@ class Works extends Component {
   render() {
     return (
       <div className='quote'>
-        <h1>dsfjhwdoisgnpodsmgiewndofn</h1>
+        <h1>sdfjdsfmasdkf</h1>
         <img src='' />
       </div>
     );

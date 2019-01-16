@@ -17,14 +17,14 @@ class Quotes extends Component {
   }
 
   async fetchQuotes(){
-      let response = await axios.get(GQ_URL)
-      let randomNum = Math.floor(Math.random() * 20)
-      const randomQuote = response.data.quotes[randomNum].quote
-      const matchingPub = response.data.quotes[randomNum].publication
-      this.setState({
-        quote: randomQuote,
-        publication: matchingPub, 
-      });
+    let response = await axios(GQ_URL)
+    let randomNum = Math.floor(Math.random() * 20)
+    const randomQuote = response.data.quotes[randomNum].quote
+    const matchingPub = response.data.quotes[randomNum].publication
+    this.setState({
+      quote: randomQuote,
+      publication: matchingPub, 
+    });
   }
 
   componentDidMount(){
@@ -35,7 +35,6 @@ class Quotes extends Component {
   }
 
   componentWillUnmount(){ 
-    //this.mounted == false
     clearInterval(() =>{
       this.fetchQuotes()
     })
