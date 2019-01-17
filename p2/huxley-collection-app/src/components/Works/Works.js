@@ -13,40 +13,51 @@ class Works extends Component {
     super(props)
 
     this.state = {
-      title: '', 
-      coverURL: null
+      books: []
     }
     this.fetchBooks = this.fetchBooks.bind(this)
+    this.getTitleAndCover = this.getTitleAndCover.bind(this)
   }
 
   async fetchBooks(){
-    // const parser = new xml2js.Parser()
-
-
     let response = await axios(GR_URL)
-    console.log(response.data)
 
     parseString(response.data, (err, result) => {
-      console.dir(result)
-    })
+      console.dir(result.GoodreadsResponse.author[0].books[0].book)
+      
+      const gr_json_books = result.GoodreadsResponse.author[0].books[0].book
 
-    // this.setState({
-    //    title: 'dsdsf',
-    //    coverURL: "dsjfsdj"
-    // });
+      this.setState({
+        books: gr_json_books
+      })
+      //consider moving map to another method
+    })
   }
+
+  getTitleAndCover(){
+    return this.state.books.map(book => {
+      return(
+        <div>
+          <h2>{book.title[0]}</h2>
+          <img src={book.image_url[0]} alt='book cover' />
+        </div>
+      )
+    })
+  }
+
+
 
   componentDidMount(){
     this.fetchBooks()
   }
 
   render() {
+
     return (
-      <div className='quote'>
-        <h1>sdfjdsfmasdkf</h1>
-        <img src='' />
+      <div className='book-container'>
+        {this.getTitleAndCover()}     
       </div>
-    );
+    )
   }
 }
 
