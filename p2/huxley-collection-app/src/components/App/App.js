@@ -4,6 +4,7 @@ import { Route, Redirect } from "react-router-dom";
 import Header from '../Header/Header'
 import Quotes from '../Quotes/Quotes'
 import Works from '../Works/Works'
+import BookInfo from '../BookInfo/BookInfo'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         	<Redirect from="/" to="/home" />
         	<Route path="/home" component={Quotes} />
         	<Route path="/collected-works" component={Works} />
+        	<Route path="/book-info/:id" component={BookInfo} />
         </main>
       </div>
     );
