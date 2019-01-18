@@ -8,7 +8,7 @@
 	flex-direction: row; 
 	text-align: center;
 	list-style-type: none;
-	padding: 15px 15px;
+	padding: 2% 2%;
 	background: black;
 	font-family: reachTheEnd;
 	font-size: 24pt;
@@ -24,4 +24,13 @@
 
 a:hover{
 	text-shadow: 2px 2px gray;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) { 
+  	.nav-flex{
+  		font-size: 18pt;
+  	}
 }

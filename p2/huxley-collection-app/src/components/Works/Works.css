@@ -1,0 +1,19 @@
+.books-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center; 
+	padding-top: 2%;
+	background: url('../../images/book_background.jpg') fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.book-container{
+	padding-bottom: 15px;
+}
+
+.book-title{
+	margin-bottom: 2%;
+	font-family: 'Merriweather', serif;
+	color: white;
+}

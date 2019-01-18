@@ -25,12 +25,20 @@ class BookInfo extends Component{
 		return this.state.books.map(book =>{
 			if(this.state.id === book.id[0]._){
 				return(
-				  	<div>
-				  		<h1>{book.title[0]}</h1> 
-				  		<img src={book.image_url[0]} alt='book cover large' />
-				  		<p>Total # of Pages: {book.num_pages[0]}</p>
-				  		<p>Average Rating: {book.average_rating[0]}</p>
-				  		<p dangerouslySetInnerHTML={{__html: `Description: <br />${book.description[0]}`}}></p> 
+				  	<div className='book-info-bg'>
+				  		<div className='book-info-container'>
+				  			<h1 className='book-info-title'>{book.title[0]}</h1> 
+				  			<div className='book-info-layout'>
+				  				<div className='cover-container'>
+				  					<img src={book.image_url[0]} alt='book cover large' className='book-cover' />
+				  				</div>
+				  				<div className='details'>
+				  					<p><b># of Pages:</b> {book.num_pages[0]}</p>
+							  		<p><b>Average Rating:</b> {book.average_rating[0]}</p>
+							  		<p dangerouslySetInnerHTML={{__html: `<b>Description:</b> <br />${book.description[0]}`}}></p>
+				  				</div>
+				  			</div> 
+				  		</div>
 				  	</div> 
 				)
 			}

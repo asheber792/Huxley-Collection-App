@@ -8,7 +8,7 @@ require('dotenv').config()
 const parseString = require('xml2js').parseString
 
 const GOODREADS_TOKEN = process.env.REACT_APP_GOODREADS_ACCESS_TOKEN
-const GR_URL = `https://www.goodreads.com/author/list/3487.Aldous_Huxley?page=1&per_page=50&key=${GOODREADS_TOKEN}`
+const GR_URL = `https://www.goodreads.com/author/list/3487.Aldous_Huxley?page=1&per_page=51&key=${GOODREADS_TOKEN}`
 
 class Works extends Component {
   constructor(props){
@@ -39,8 +39,8 @@ class Works extends Component {
   getTitleAndCover(){
     return this.state.books.map(book => {
       return(
-        <div key={book.id[0]._}>
-          <h2>{book.title[0]}</h2>
+        <div key={book.id[0]._ } className='book-container'>
+          <p className='book-title'>{book.title[0]}</p>
           <img id={book.id[0]._} src={book.image_url[0]} alt='book cover' onClick={this.handleClick} />
         </div>
       )
@@ -71,7 +71,7 @@ class Works extends Component {
 
     return (
       <div>
-        <div className='book-container'>
+        <div className='books-container'>
           {this.getTitleAndCover()}     
         </div>
       </div> 

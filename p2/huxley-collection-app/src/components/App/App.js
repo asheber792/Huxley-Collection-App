@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <main>
+        <main className='main-content'>
         	<Redirect from="/" to="/home" />
         	<Route path="/home" component={Quotes} />
         	<Route path="/collected-works" component={Works} />

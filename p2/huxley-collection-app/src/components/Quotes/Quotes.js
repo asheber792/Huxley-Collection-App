@@ -42,11 +42,15 @@ class Quotes extends Component {
 
   render() {
     return (
-      <div className='quote'>
-        <h1>{this.state.quote}</h1>
-        <sub>
-          {this.state.publication != null ? `- ${this.state.publication}` : "- Unknown Publication"}
-        </sub>
+      <div className='quote-container'>
+        <div className='quote'>
+          <img src="../../images/huxley_sig.png" />
+          <h2>{this.state.quote}</h2>
+          <br />
+          <small className='publ'>
+            {this.state.publication != null ? `- ${this.state.publication}` : "- Unknown Publication"}
+          </small>
+        </div>
       </div>
     );
   }
