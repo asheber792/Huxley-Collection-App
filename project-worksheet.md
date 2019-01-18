@@ -10,9 +10,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 1| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 2| Pseudocode / actual code | Incomplete
-|Day 2| Initial Clickable Model  | Incomplete
+|Day 1| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 2| Pseudocode / actual code | Complete
+|Day 3| Initial Clickable Model  | Incomplete
 |Day 3| MVP | Incomplete
 |Day 4| Present | Incomplete
 
@@ -29,11 +29,6 @@ https://res.cloudinary.com/dj10zwlqs/image/upload/v1547570130/Project2/AA_P2_Wir
 
 https://res.cloudinary.com/dj10zwlqs/image/upload/v1547570137/Project2/AA_Priority_Matrix.jpg
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### SAMPLE.....
 #### MVP 
 
 - Find and use external api's for quotes and list of books
@@ -43,6 +38,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - styles 
 
 #### PostMVP 
+- add multiple pages to collected works 
+- add more than one page worth of api quote data 
 - add freely available ebooks of available books
 - add reviews for books 
 
