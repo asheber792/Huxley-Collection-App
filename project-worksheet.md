@@ -60,7 +60,6 @@ https://res.cloudinary.com/dj10zwlqs/image/upload/v1547570147/Project2/AA_P2_Com
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-#### SAMPLE.....
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
 | Working with API | H | 3hrs| 6hrs |
@@ -82,9 +81,8 @@ Helper functions should be generic enought that they can be reused in other appl
  
 | Library | What it Does | 
 | --- | :---: |  
-| Bootstrap | Used to help style my application | 
-| GoodReads API | Used to get book covers and info | 
-| GoodQuotes API | Used to get Huxley Quotes | 
+| GoodReads API | Used to get book covers and info | https://www.goodreads.com/api/
+| GoodQuotes API | Used to get Huxley Quotes | https://goodquotesapi.herokuapp.com/#/
 
 ## Code Snippet 
 
