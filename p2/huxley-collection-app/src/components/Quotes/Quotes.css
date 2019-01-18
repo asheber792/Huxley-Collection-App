@@ -35,4 +35,9 @@
   	.quote{
   		font-size: 7pt;
   	}
+
+  	.home-title{
+		width: 75%;
+		margin-bottom: 15%;
+	}
 }

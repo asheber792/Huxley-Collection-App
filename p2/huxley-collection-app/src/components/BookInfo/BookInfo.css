@@ -37,3 +37,18 @@
 .details a {
 	text-shadow: none;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) {
+  	.book-info-layout{
+  		display: block;
+  	}
+
+  	.book-cover{
+		width: 40%;
+		margin-top: 2%;
+		margin-bottom: 5%;
+	}
+}
