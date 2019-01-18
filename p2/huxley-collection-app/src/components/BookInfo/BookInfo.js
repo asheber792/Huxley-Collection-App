@@ -47,7 +47,7 @@ class BookInfo extends Component{
 
 	render(){
 		return(
-			<div>
+			<div key={this.state.id}>
 				{this.getBookInfo()}
 			</div>
 		)
