@@ -43,6 +43,9 @@
   and (min-device-width: 320px) 
   and (max-device-width: 736px) 
   and (orientation: portrait) {
+  	.book-info-bg{
+  		padding-bottom: 60%;
+  	}
   	.book-info-layout{
   		display: block;
   	}
