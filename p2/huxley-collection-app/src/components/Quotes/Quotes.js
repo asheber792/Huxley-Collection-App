@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Quotes.css';
 import axios from 'axios'
+import image from "../../images/huxley_sig.png"
 
 const GQ_URL='https://goodquotesapi.herokuapp.com/author/aldous+huxley?page=2'
 
@@ -31,7 +32,7 @@ class Quotes extends Component {
     this.fetchQuotes()
     setInterval(() => {
       this.fetchQuotes()
-    }, 5000)
+    }, 10000)
   }
 
   componentWillUnmount(){ 
@@ -44,7 +45,7 @@ class Quotes extends Component {
     return (
       <div className='quote-container'>
         <div className='quote'>
-          <img src="../../images/huxley_sig.png" />
+          <img src={image} className='home-title' alt='huxley sigature title' />
           <h2>{this.state.quote}</h2>
           <br />
           <small className='publ'>
