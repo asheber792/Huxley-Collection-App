@@ -1,1 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Description
+
+A React web app displaying the works of Aldous Huxley, providing book covers, titles, descriptions, etc.
+
+motionless-air.surge.sh
