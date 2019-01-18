@@ -5,26 +5,44 @@ class BookInfo extends Component{
 	constructor(props){
 		super(props)
 		this.state = {
-
+			id: '',
+			books: []
 		}
-
+		this.getBookInfo = this.getBookInfo.bind(this)
 	}
 
 	componentDidMount(){
+		const gr_books = this.props.location.state.books
+		const bookId = this.props.match.params.id
 
+		this.setState({
+			id: bookId,
+			books: gr_books 
+		})
+	}
+
+	getBookInfo(){
+		return this.state.books.map(book =>{
+			if(this.state.id === book.id[0]._){
+				return(
+				  	<div>
+				  		<h1>{book.title[0]}</h1> 
+				  		<img src={book.image_url[0]} alt='book cover large' />
+				  		<p>Total # of Pages: {book.num_pages[0]}</p>
+				  		<p>Average Rating: {book.average_rating[0]}</p>
+				  		<p dangerouslySetInnerHTML={{__html: `Description: <br />${book.description[0]}`}}></p> 
+				  	</div> 
+				)
+			}
+		})
 	}
 
 	render(){
-		console.log(this.props.match.params.id)
 		return(
-		  	<div>
-		  		<h1>Title: {this.props.title}</h1> 
-		  		<img src={this.props.cover} />
-		  		<h6>Publication Year: {this.props.year}</h6>
-		  		<p>Average Rating: {this.props.rating}</p>
-		  		<p>Description: <br /> {this.props.description}</p> 
-		  	</div>   
-		  )
+			<div>
+				{this.getBookInfo()}
+			</div>
+		)
 	}
 }
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Works.css';
 import axios from 'axios'
-import BookInfo from '../BookInfo/BookInfo'
 import { Redirect } from 'react-router';
 
 require('dotenv').config()
@@ -19,6 +18,7 @@ class Works extends Component {
       id: null, 
       books: []
     }
+
     this.fetchBooks = this.fetchBooks.bind(this)
     this.getTitleAndCover = this.getTitleAndCover.bind(this)
     this.handleClick = this.handleClick.bind(this)
@@ -28,8 +28,6 @@ class Works extends Component {
     let response = await axios(GR_URL)
 
     parseString(response.data, (err, result) => {
-      console.dir(result.GoodreadsResponse.author[0].books[0].book)
-      
       const gr_json_books = result.GoodreadsResponse.author[0].books[0].book
 
       this.setState({
@@ -50,10 +48,6 @@ class Works extends Component {
   }
 
   handleClick(evnt){
-    //consider redirect with react router
-    console.log(this.props.match)
-    console.log(evnt.target.id)
-
     this.setState({
       id: evnt.target.id,
       redirect: true
@@ -67,7 +61,11 @@ class Works extends Component {
   render() {
     if (this.state.redirect) {
       return(
-        <Redirect push to={`/book-info/${this.state.id}`} />
+        <Redirect 
+          push to={{
+            pathname:`/book-info/${this.state.id}`,
+            state: { books: this.state.books }
+          }} />
       )
     }
 
