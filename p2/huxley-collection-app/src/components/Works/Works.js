@@ -41,7 +41,7 @@ class Works extends Component {
       return(
         <div key={book.id[0]._ } className='book-container'>
           <p className='book-title'>{book.title[0]}</p>
-          <img id={book.id[0]._} src={book.image_url[0]} alt='book cover' onClick={this.handleClick} />
+          <img id={book.id[0]._} src={book.image_url[0]} alt='book cover' className='book-cover' onClick={this.handleClick} />
         </div>
       )
     })

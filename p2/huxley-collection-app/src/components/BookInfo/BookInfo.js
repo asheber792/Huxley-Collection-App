@@ -30,7 +30,7 @@ class BookInfo extends Component{
 				  			<h1 className='book-info-title'>{book.title[0]}</h1> 
 				  			<div className='book-info-layout'>
 				  				<div className='cover-container'>
-				  					<img src={book.image_url[0]} alt='book cover large' className='book-cover' />
+				  					<img src={book.image_url[0]} alt='book cover large' className='book-cover-large' />
 				  				</div>
 				  				<div className='details'>
 				  					<p><b># of Pages:</b> {book.num_pages[0]}</p>

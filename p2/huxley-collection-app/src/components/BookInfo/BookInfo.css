@@ -6,7 +6,7 @@
 	background: url('../../images/book_background.jpg') fixed;
 	background-size: cover;
 	color: white;
-	height: 90vh;
+	height: 100vh;
 }
 
 .book-info-container{
@@ -29,7 +29,7 @@
 	margin-bottom: 15px;
 }
 
-.book-cover{
+.book-cover-large{
 	height: 75%;
 	margin-top: 5%;
 }
