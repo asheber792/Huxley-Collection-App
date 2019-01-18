@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Header from '../Header/Header'
 import Quotes from '../Quotes/Quotes'
 import Works from '../Works/Works'
@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <Header />
         <main className='main-content'>
-        	<Redirect from="/" to="/home" />
+        	<Route path="/" exact component={Quotes} />
         	<Route path="/home" component={Quotes} />
         	<Route path="/collected-works" component={Works} />
         	<Route path="/book-info/:id" component={BookInfo} />

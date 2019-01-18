@@ -25,7 +25,7 @@ class BookInfo extends Component{
 		return this.state.books.map(book =>{
 			if(this.state.id === book.id[0]._){
 				return(
-				  	<div className='book-info-bg'>
+				  	<div className='book-info-bg' key={this.state.id}>
 				  		<div className='book-info-container'>
 				  			<h1 className='book-info-title'>{book.title[0]}</h1> 
 				  			<div className='book-info-layout'>
@@ -47,7 +47,7 @@ class BookInfo extends Component{
 
 	render(){
 		return(
-			<div key={this.state.id}>
+			<div>
 				{this.getBookInfo()}
 			</div>
 		)
