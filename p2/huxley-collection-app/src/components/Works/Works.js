@@ -8,7 +8,7 @@ require('dotenv').config()
 const parseString = require('xml2js').parseString
 
 const GOODREADS_TOKEN = process.env.REACT_APP_GOODREADS_ACCESS_TOKEN
-const GR_URL = `https://www.goodreads.com/author/list/3487.Aldous_Huxley?page=1&per_page=51&key=${GOODREADS_TOKEN}`
+const GR_URL = `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/author/list/3487.Aldous_Huxley?page=1&per_page=51&key=${GOODREADS_TOKEN}`
 
 class Works extends Component {
   constructor(props){
